@@ -1,0 +1,68 @@
+ .mainpage { /* Changes the main page of site */
+                font: 1rem 'Merriweather', sans-serif; /* Changes all font to Overpass Mono */
+            }
+            #site-navigation{ /* Changes the top bar */
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px; /* Changes width of box */
+                background-color: rgb(213, 217, 217);
+                color: rgb(0, 0, 0);
+            }
+            .nav-links a{
+                color: rgb(0, 0, 0);
+            }
+            #logo{
+                color: rgb(0,0,0);
+                font-size: 32px;
+            }
+            #logo a{
+                text-decoration: none;
+            }
+            #logo a:visited{
+                color:black;
+            }
+            #logo a:link {
+                color:black;
+            }
+            #fancy-log{
+                color: rgb(67,101,148);
+                font-size: 32px;
+                position:relative; right: 6.5px;
+            }
+            .menu {
+                display:flex;
+                gap: 1em;
+                font-size: 18px;
+            }
+            .menu li:hover {
+                border-radius: 5px;
+                transition: 0.3s ease;
+            }
+            .menu li {
+                padding: 5px 14px;
+            }
+            input[type=checkbox]{
+                display: none;
+            }
+            .hamburger {
+                display: none;
+                font-size: 24px;
+                user-select: none;
+            }
+            input[type=checkbox]:checked ~ .menu{
+                display: block;
+            }
+            .menu{ /*Governs the 4 blocks in the navbar*/
+                list-style:none;
+            }
+            .menu a{
+                text-decoration: none; /* Removes the Underline from links */
+            }
+            .menu a:link{
+                text-decoration: none; /* Removes the Underline from links */
+                color: rgb(67,101,148);
+            }
+            .menu a:hover{
+                color:rgb(67,101,148);
+            }
