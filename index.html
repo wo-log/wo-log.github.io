@@ -1,14 +1,94 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Page Title</title>
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="description" content=" The personal website of Justin Lee. ">
+        <meta name="keywords" content="Project, student">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
+        <title> wolog | The personal website of Justin Lee. </title>
         <style>
-        h1 {color:red;}
-        p {color: blue}  
+            .mainpage { /* Changes the main page of site */
+                font: 1rem 'Merriweather', sans-serif; /* Changes all font to Overpass Mono */
+            }
+            #site-navigation{ /* Changes the top bar */
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px; /* Changes width of box */
+                background-color: rgb(213, 217, 217);
+                color: rgb(0, 0, 0);
+            }
+            .nav-links a{
+                color: rgb(0, 0, 0);
+            }
+            #logo{
+                color: rgb(0,0,0);
+                font-size: 32px;
+            }
+            #fancy-log{
+                color: rgb(67,101,148);
+                font-size: 32px;
+                position:relative; right: 6.5px;
+            }
+            .menu {
+                display:flex;
+                gap: 1em;
+                font-size: 18px;
+            }
+            .menu li:hover {
+                border-radius: 5px;
+                transition: 0.3s ease;
+            }
+            .menu li {
+                padding: 5px 14px;
+            }
+            input[type=checkbox]{
+                display: none;
+            }
+            .hamburger {
+                display: none;
+                font-size: 24px;
+                user-select: none;
+            }
         </style>
     </head>
-<body>
-    <h1> This is a heading</h1>
-    <p> This is a paragraph</p>
-</body>
+    <body>
+        <main class="mainpage">
+           <header class="site-header">
+                <nav id="site-navigation">
+                    <div class="wolog-home">
+                        <!-- wolog-home = the "wolog" in the top left corner meant to redirect back to homepage-->
+                        <h1 id="logo">
+                            <!-- ID, not class = only once on page-->
+                            <a href="https://wo-log.github.io/">
+                                wo
+                                <span id="fancy-log">log</span>
+                            </a>
+                        </h1>
+                    </div>
+                    <ul class="nav-links">
+                        <input type="checkbox" id="checkbox_toggle" />
+                        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                        <div class = menu>
+                            <li> <a href="https://wo-log.github.io/"> About Me </a></li> <!-- Remember to update this link-->
+                            <li> <a href="https://wo-log.github.io/"> Math </a></li><!-- Remember to update this link-->
+                            <li> <a href="https://wo-log.github.io/"> Debate</a></li><!-- Remember to update this link-->
+                            <li> <a href="https://wo-log.github.io/"> Code </a></li><!-- Remember to update this link-->
+                            <li> <a href="https://wo-log.github.io/"> Writing </a></li><!-- Remember to update this link-->
+                            <li> <a href="https://wo-log.github.io/"> Contact </a></li><!-- Remember to update this link-->
+                        </div>
+                    </ul>
+                </nav>
+           </header>
+           <section class="site-content">
+           </section> 
+           <footer class="site-footer">
+
+           </footer>
+        </main>
+    </body>
 </html>
