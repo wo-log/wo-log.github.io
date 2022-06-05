@@ -1,12 +1,13 @@
- .mainpage { /* Changes the main page of site */
-                font: 1rem 'Merriweather', sans-serif; /* Changes all font to Overpass Mono */
+ @import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
+            .mainpage { /* Changes the main page of site */
+                font-family: "Dosis";
             }
             #site-navigation{ /* Changes the top bar */
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 padding: 5px; /* Changes width of box */
-                background-color: rgb(213, 217, 217);
+                background-color: rgb(232, 232, 232);
                 color: rgb(0, 0, 0);
             }
             .nav-links a{
@@ -55,9 +56,12 @@
             }
             .menu{ /*Governs the 4 blocks in the navbar*/
                 list-style:none;
+                color: rgb(67,101,148);
             }
             .menu a{
                 text-decoration: none; /* Removes the Underline from links */
+                color: rgb(67,101,148);
+                font-size: 20px;
             }
             .menu a:link{
                 text-decoration: none; /* Removes the Underline from links */
