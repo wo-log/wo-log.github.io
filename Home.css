@@ -1,13 +1,20 @@
             /* Begin NavBar*/
+            /* Begin NavBar*/
             @import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
             .mainpage { /* Changes the main page of site */
                 font-family: "Dosis";
             }
             :root{
-                /* Defining Some Colors*/
-                --blue: rgb(67,101,148);
-                --black: rgb(0,0,0);
+                --blue: rgb(67,101,148); /* Main Blue*/
+                --blue2: rgb(37,109,190); /* Blue at the bottom */
+                --blue3: rgb(104,135,185); /* Blue at bottom right corner */
+                --blue4: rgb(82,133,226); /*Blue at top right corner */
+                --blue5: rgb(62, 121, 153); /* Blue green near bottom right */
+                --blue6: rgb(55,131,187); /* Blue green top of bottom right */
+                --blue7: rgb(147, 174, 217); /* Big blue circle near center */
+                --black: rgb(0,0,0); 
                 --lightgrey: rgb(230,234,239);
+                --white: rgb(255, 255, 255);
             }
             #site-navigation{ /* Changes the top bar */
                 display: flex;
@@ -141,4 +148,19 @@
                 height:510px;
                 background-color:var(--blue);
                 transform:translate(0px,-360px);
+            }
+            .white-rectangle{
+                text-align:center;
+                background-color:var(--white);
+                width:320px;
+                height: 80px;
+                line-height: 60px;
+                color: var(--black);
+                margin: 20px auto;
+                position: relative;
+                transform:translate(-520px, -540px);
+            }
+            #bottom-blue{
+                width: 160px;
+                height: 160px;
             }
