@@ -1,25 +1,36 @@
-@import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
+            /* Begin NavBar*/
+            @import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
             .mainpage { /* Changes the main page of site */
                 font-family: "Dosis";
+            }
+            :root{
+                /* Defining Some Colors*/
+                --blue: rgb(67,101,148);
+                --black: rgb(0,0,0);
+                --lightgrey: rgb(230,234,239);
             }
             #site-navigation{ /* Changes the top bar */
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: space-between; 
                 padding: 5px; /* Changes width of box */
-                background-color: rgb(232, 232, 232);
-                color: rgb(0, 0, 0);
+                background-color: var(--lightgrey);
+                color: var(--black);
             }
             .nav-links a{
-                color: rgb(0, 0, 0);
+                color: var(--black);
             }
             .nav-links {
                 font-weight:700;
             }
             #logo{
-                color: rgb(0,0,0);
+                float:left;
+                margin:0 0 0 0;
+                cursor:pointer;
+                letter-spacing: 0.8px;
                 font-size: 32px;
-                font-weight: 400;
+                line-height: 28px;
+                font-weight: 300;
             }
             #logo a{
                 text-decoration: none;
@@ -31,7 +42,7 @@
                 color:black;
             }
             #fancy-log{
-                color: rgb(67,101,148);
+                color: var(--blue);
                 font-size: 32px;
                 position:relative; right: 6.5px;
                 font-weight: 600;
@@ -61,19 +72,19 @@
             }
             .menu{ /*Governs the 4 blocks in the navbar*/
                 list-style:none;
-                color: rgb(67,101,148);
+                color: var(--blue);
             }
             .menu a{
                 text-decoration: none; /* Removes the Underline from links */
-                color: rgb(67,101,148);
+                color: var(--blue);
                 font-size: 20px;
             }
             .menu a:link{
                 text-decoration: none; /* Removes the Underline from links */
-                color: rgb(67,101,148);
+                color: var(--blue);
             }
             .menu a:hover{
-                color:rgb(67,101,148);
+                color:var(--blue);
             }
             .dropdown {
             background-color: rgb(1, 139, 139);
@@ -101,11 +112,33 @@
                 font-size: 20px;
             }
             #Intro-Content a{
-            color: rgb(67,101,148);
+            color: var(--blue);
             }
             #Intro-Content a:link{
-            color: rgb(67,101,148);   
+            color: var(--blue);   
             }
             #Intro-Content a:hover{
-            color:rgb(67,101,148);    
+            color:var(--blue);    
+            }
+            #bigcircle{
+                width: 360px;
+                height: 360px;
+                background-color: var(--blue);
+                border-radius: 0 0 360px 0;
+                -moz-border-radius: 0 0 360px 0;
+                -webkit-border-radius: 0 0 360px 0;
+                transform:translate(360px, 75px) rotate(-45deg);
+            }
+            #canvas {
+                /* border: 1px solid #999; */
+                display: block;
+                background-color:antiquewhite;
+                width: 100%;
+                height: 500px;
+            }
+            #left-rectangle{
+                width:540px;
+                height:510px;
+                background-color:var(--blue);
+                transform:translate(0px,-360px);
             }
