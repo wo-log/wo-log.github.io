@@ -1,5 +1,4 @@
-            /* Begin NavBar*/
-            /* Begin NavBar*/
+/* Begin NavBar*/
             @import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
             .mainpage { /* Changes the main page of site */
                 font-family: "Dosis";
@@ -16,6 +15,10 @@
                 --lightgrey: rgb(230,234,239);
                 --white: rgb(255, 255, 255);
             }
+            #noscroll{
+                overflow-x:hidden;
+                  overflow-y:hidden;  
+            } 
             #site-navigation{ /* Changes the top bar */
                 display: flex;
                 align-items: center;
@@ -116,7 +119,8 @@
             display: block;
             }
             #Intro-Content {
-                font-size: 20px;
+                font-size: 25px;
+                transform:translate(520px, -3600px);
             }
             #Intro-Content a{
             color: var(--blue);
@@ -127,6 +131,13 @@
             #Intro-Content a:hover{
             color:var(--blue);    
             }
+            #canvas {
+                /* border: 1px solid #999; */
+                display: block;
+                background-color:antiquewhite;
+                width: 100%;
+                height: 500px;
+            }
             #bigcircle{
                 width: 360px;
                 height: 360px;
@@ -135,19 +146,14 @@
                 -moz-border-radius: 0 0 360px 0;
                 -webkit-border-radius: 0 0 360px 0;
                 transform:translate(360px, 75px) rotate(-45deg);
-            }
-            #canvas {
-                /* border: 1px solid #999; */
-                display: block;
-                background-color:antiquewhite;
-                width: 100%;
-                height: 500px;
+                overflow-y:hidden;
             }
             #left-rectangle{
                 width:540px;
-                height:510px;
+                height:510.25px;
                 background-color:var(--blue);
                 transform:translate(0px,-360px);
+                overflow-y:hidden;
             }
             .white-rectangle{
                 text-align:center;
@@ -159,8 +165,155 @@
                 margin: 20px auto;
                 position: relative;
                 transform:translate(-520px, -540px);
+                overflow-y:hidden;
             }
             #bottom-blue{
-                width: 160px;
-                height: 160px;
+                width: 260px;
+                height: 260px;
+                background-color: var(--blue2);
+                border-radius: 0 0 260px 0;
+                -moz-border-radius: 0 0 260px 0;
+                -webkit-border-radius: 0 0 260px 0;
+                transform:translate(720px, -610px) rotate(-135deg);
+                overflow-y:hidden;
+            }
+            .white-rectangle2{ /*Bottom rectangle ; move to bottom when done */
+                background-color:var(--white);
+                width:1600px;
+                height: 200px;
+                line-height: 60px;
+                color: var(--lightgrey);
+                position: relative;
+                transform:translate(0px, -3452px);
+                overflow-y:hidden;
+            }
+            #bc-blue{ /*First quarter circle bottom right */
+                width: 120px;
+                height: 120px;
+                background-color: var(--blue3);
+                border-radius: 0 0 120px 0;
+                -moz-border-radius: 0 0 120px 0;
+                -webkit-border-radius: 0 0 120px 0;
+                transform:translate(1400px, -880px) rotate(-168deg);
+                overflow-y:hidden;
+            }
+            #bc-blue2{ /*Second quartercircle bottom right */
+                width: 120px;
+                height: 120px;
+                background-color: var(--blue3);
+                border-radius: 0 0 120px 0;
+                -moz-border-radius: 0 0 120px 0;
+                -webkit-border-radius: 0 0 120px 0;
+                transform:translate(1383px, -890px) rotate(96deg);
+                overflow-y:hidden;
+            }
+            #bc-blue3{ /*Rectangle at bottom right */
+                width:50px;
+                height:150px;
+                background-color:var(--blue3);
+                transform:translate(1480px,-1050px);
+                overflow-y:hidden;
+            }
+            #tc-blue{ /*First quartercircle at top right */
+                width: 175px;
+                height: 175px;
+                background-color: var(--blue4);
+                border-radius: 0 0 175px 0;
+                -moz-border-radius: 0 0 175px 0;
+                -webkit-border-radius: 0 0 175px 0;
+                transform:translate(1203px, -1615px) rotate(110deg);
+                overflow-y:hidden;
+            }
+            #tc-blue2{ /*Second quartercircle at top right */
+                width: 175px;
+                height: 175px;
+                background-color: var(--blue4);
+                border-radius: 0 0 175px 0;
+                -moz-border-radius: 0 0 175px 0;
+                -webkit-border-radius: 0 0 175px 0;
+                transform:translate(1363px, -1732.2px) rotate(20deg);
+                overflow-y:hidden;
+            }
+            #tc-blue3{ /* First rectangle top right */
+                width:150px;
+                height:50px;
+                background-color:var(--blue4);
+                transform:translate(1238px,-1990px);
+                overflow-y:hidden;
+            }
+            #tc-blue4{ /* Second rectangle top right */
+                width:200px;
+                height:150px;
+                background-color:var(--blue4);
+                transform:translate(1318px,-2040px);
+                overflow-y:hidden;
+            }
+            #c-blue5{ /* Blue Green Circle near Bottom Right */
+                width: 52px;
+                height: 52px;
+                background-color:var(--blue5);
+                border-radius:50%;
+                transform:translate(1318px,-1780px);
+            }
+            #c-blue6{ /* Top blue green circle near bottom right */
+                width: 77px;
+                height: 77px;
+                background-color:var(--blue6);
+                border-radius:50%;
+                transform:translate(1358px,-1920px);
+            }
+            #c-blue7{ /* Little blue */
+                width: 23px;
+                height: 23px;
+                background-color:var(--blue);
+                border-radius:50%;
+                transform:translate(1478px, -2050px);
+            }
+            #c-blue8{ /* Lightblue circle in center */
+                width: 180px;
+                height: 180px;
+                background-color:var(--blue7);
+                border-radius:50%;
+                transform:translate(1020px, -2050px);
+            }
+            #c-blue9{ /*Topcorner blue circle near bottom */
+                width: 80px;
+                height: 80px;
+                background-color:var(--blue4);
+                border-radius:50%;
+                transform:translate(640px, -2150px);
+            }
+            #c-blue10{
+                width: 190px;
+                height: 190px;
+                background-color:var(--blue6);
+                border-radius:50%;
+                transform:translate(740px, -2450px);
+            }
+            #c-blue11{
+                width: 70px;
+                height: 70px;
+                background-color:var(--blue4);
+                border-radius:50%;
+                transform:translate(700px, -2750px);
+            }
+            #c-blue12{
+                width: 70px;
+                height: 70px;
+                background-color:var(--blue2);
+                border-radius:50%;
+                transform:translate(1050px, -2680px);
+            }
+            #c-blue13{
+                width:30px;
+                height:30px;
+                background-color:var(--blue);
+                border-radius: 50%;
+                transform:translate(1050px,-2880px);
+            }
+            .siderectangle{
+                width:150px;
+                height:1000px;
+                background-color:var(--white);
+                transform:translate(1502px, -2962px);
             }
